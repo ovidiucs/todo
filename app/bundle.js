@@ -5,24 +5,22 @@
 
 //var data = [1, 2, 2, 3, 4, 5, 5, 5, 6];
 
-//console.log(unique(data));
+//console.log(unique(data))
 
-
-var forms = require('forms'), 
+var forms = require('forms'),
     fields = forms.fields,
     validators = forms.validators;
 
 var reg_form = forms.create({
-        username: fields.string({ required: true}),
-        password: fields. password({required: true}),
-        confirm: fields.password({
-            required: true,
-            validators: [validators.matchField('password')]
-        }),
-        email: fields.email()
+    username: fields.string({required: true}),
+    password: fields.password({required: true}),
+    confirm:  fields.password({
+        required: true,
+        validators: [validators.matchField('password')]
+    }),
+    email: fields.email()
 });
 
-reg_form.toHTML();
 
 },{"forms":2}],2:[function(require,module,exports){
 // This file is just added for convenience so this repository can be
