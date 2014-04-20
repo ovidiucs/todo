@@ -20,4 +20,4 @@ var reg_form = forms.create({
     email: fields.email()
 });
 
-console.log(reg_form.toHTML());
+var c = document.write(reg_form.toHTML());
