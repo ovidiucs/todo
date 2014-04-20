@@ -21,7 +21,7 @@ var reg_form = forms.create({
     email: fields.email()
 });
 
-reg_form.toHTML();
+console.log(reg_form.toHTML());
 
 },{"forms":2}],2:[function(require,module,exports){
 // This file is just added for convenience so this repository can be
